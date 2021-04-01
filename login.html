@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Tempat Favicon-->
+    <link rel="shortcut icon" href="img/hamburger.png">
+
+    <!-- Tempat Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        font-family: 'Poppins';
+        font-size: 18dp;
+      }
+      .bg-svg{
+        background-color: #FBA41E;
+      }
+      .form-label{
+        font-weight: 900;
+      }
+      .btn-login{
+        width: 100%;
+        background-color: slategrey;
+        color: white !important;
+      }
+      .btn-login:hover{
+        width: 100%;
+        background-color: rgb(86, 143, 179);
+      }
+      .btn-create-account{
+        width: 100%;
+        background-color: lightgray;
+        color: black;
+      }
+      .form-control{
+        line-height: 2;
+      }
+      @media(max-width:932px){
+        .display-none{
+          display: none !important;
+        }
+      }
+    </style>
+
+    <title>Shinra Electric Power Company</title>
+  </head>
+  <body>
+
+    <!--Tempat Gambar-->
+    <div class="row m-0 h-100">
+      <div class="col p-0 d-flex justify-content-center align-items-center bg-svg display-none">
+        <img src="img/login1.svg" class="w-70" width="500">
+      </div>
+
+      <!--Tempat Form Login-->
+      <div class="col p-0 d-flex justify-content-center align-items-center">
+        <form class="w-75">
+          <h1 class="form-label">Sign In</h1>
+          <p style="margin-top: -9x;" class="form-text"></p>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input placeholder="Type your email address" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input placeholder="Type your password" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <!--<button type="submit" class="btn btn-login">Sign In</button>-->
+          <a href="index.html" type="submit" class="btn btn-login">Sign In</a>
+          <a href="register.html" type="submit" class="btn btn-create-account mt-2">Create an Account</a>
+
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
